@@ -26,7 +26,7 @@ function Header() {
             href={"/findwork"}
             className={`py-2 px-6 rounded-md ${
               pathname === "/findwork"
-                ? "text-[#7263F3] border-[#7263F3] border bg-[#7263F3]/10"
+                ? "text-white border-green-500 border bg-green-500"
                 : ""
             }`}
           >
@@ -36,7 +36,7 @@ function Header() {
             href={"/myjobs"}
             className={`py-2 px-6 rounded-md ${
               pathname === "/myjobs"
-                ? "text-[#7263F3] border-[#7263F3] border bg-[#7263F3]/10"
+                ? "text-white border-green-500 border bg-green-500"
                 : ""
             }`}
           >
@@ -46,7 +46,7 @@ function Header() {
             href={"/post"}
             className={`py-2 px-6 rounded-md ${
               pathname === "/post"
-                ? "text-[#7263F3] border-[#7263F3] border bg-[#7263F3]/10"
+                ? "text-white border-green-500 border bg-green-500"
                 : ""
             }`}
           >
@@ -61,14 +61,14 @@ function Header() {
         ) : (
           <div className="flex items-center gap-6">
             <Link
-              href={"https://jobfindr-q1cl.onrender.com/login"}
+              href={"/login"}
               className="py-2 px-6 rounded-md border flex items-center gap-4 bg-green-500 text-white border-green-500 hover:bg-green-600 trasition-all duration-200 ease-in-out"
             >
               <LogIn className="w-4 h-4" />
               Login
             </Link>
             <Link
-              href={"https://jobfindr-q1cl.onrender.com/login"}
+              href={"/register"}
               className="py-2 px-6 rounded-md border flex items-center gap-4 bg-green-500 text-white border-green-500 hover:bg-green-600 trasition-all duration-200 ease-in-out"
             >
               <UserPlus className="w-4 h-4" />

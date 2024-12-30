@@ -53,7 +53,9 @@ function Filters() {
     <div className="w-[22rem] pr-4 space-y-6">
       <div>
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold mb-4">Job Type</h2>
+          <h2 className="text-lg font-semibold mb-4 text-[#0a192f]">
+            Job Type
+          </h2>
 
           <Button
             variant={"ghost"}
@@ -142,7 +144,7 @@ function Filters() {
       </div>
 
       <div>
-        <h2 className="text-lg font-semibold mb-4">Salary Range</h2>
+        <h2 className="text-lg font-semibold mb-4 ">Salary Range</h2>
         <div className="flex flex-col gap-4">
           <Label htmlFor="minSalary">Minimum Salary</Label>
           <Slider
@@ -152,7 +154,7 @@ function Filters() {
             step={50}
             value={[minSalary]}
             onValueChange={handleMinSalaryChange}
-            className="w-full"
+            className="w-full  "
           />
           <span className="text-sm text-gray-500">
             {formatMoney(minSalary, "GBP")}
@@ -168,11 +170,9 @@ function Filters() {
           step={50}
           value={[maxSalary]}
           onValueChange={handleMaxSalaryChange}
-          className="w-full"
+          className="w-full "
         />
-        <span className="text-sm text-gray-500">
-          {formatMoney(maxSalary, "GBP")}
-        </span>
+        <span className="text-sm">{formatMoney(maxSalary, "GBP")}</span>
       </div>
     </div>
   );

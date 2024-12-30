@@ -47,8 +47,8 @@ function page() {
     <main>
       <Header />
 
-      <div className="relative px-16 bg-[#D7DEDC] overflow-hidden">
-        <h1 className="py-8 text-black font-bold text-3xl">
+      <div className="relative px-16 bg-[#0a192f] overflow-hidden ">
+        <h1 className="py-8 text-white font-bold text-3xl">
           Find Your Next Job Here
         </h1>
 
@@ -75,7 +75,9 @@ function page() {
 
       <div className="w-[90%] mx-auto mb-14">
         <div className="flex justify-between items-center">
-          <h2 className="text-3xl font-bold text-black py-8">Recent Jobs</h2>
+          <h2 className="text-3xl font-bold text-[#0a192f] py-8">
+            Recent Jobs
+          </h2>
 
           <button
             onClick={toggleGridColumns}
